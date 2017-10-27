@@ -448,7 +448,7 @@ if (distances.status == 'OK') {
 app.use('/',router);
 var server = app.listen(3009,   function () {
 
-  var host = 'https://firebase-nemai.appspot.com'
+  var host = server.address().address
   var port = server.address().port
 
   console.log("Example app listening at http://%s:%s", host, port)
