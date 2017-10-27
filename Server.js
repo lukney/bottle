@@ -446,15 +446,15 @@ if (distances.status == 'OK') {
 
 
 app.use('/',router);
-/*var server = app.listen(3009,   function () {
+var server = app.listen(3009,   function () {
 
   var host = 'https://firebase-nemai.appspot.com'
   var port = server.address().port
 
   console.log("Example app listening at http://%s:%s", host, port)
 
-});*/
-app.liseten(3009);
+});
+//app.liseten(3009);
 console.log("Listening to PORT 3009");
 router.get("/RepOppDoc",function(req,res){  
      
